@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; -webkit-box-sizing: border-box; 
+ }
+
+ 
+
+body, html {
+    font-family: "Inconsolata", sans-serif;
+    color: #C2D1DA;
+    background-color:  #f6f2ef;    
+  }
+   /* Frist Nav */ 
+.nav{
+  position: absolute;
+  right: 65px;
+  top: 23px;
+  font-weight: bold;
+}
+.nav a{
+    font-family: 'Courier New';
+    font-weight: bold;
+    color: #8F673E;
+}
+
+ /* Logo Stayle */
+.logo{
+  padding-top: 10px;
+  padding-left: 39px;
+  margin-right: 1rem;
+  font-size: 3rem;
+  font-family: 'Abril Fatface';
+  font-weight: bold;
+  color: #8F673E;
+  text-decoration: none;
+  white-space: nowrap;
+}
+  /* Slider Text Frist */
+.carousel4{
+  position: absolute;
+  bottom: 240%;
+  left: 51%;
+  font-size: 45px;
+  font-family: 'Bungee Inline';
+  font-weight: bold;
+  color: rgb(29, 59, 94); 
+  text-shadow: 2px 2px rgb(255, 255, 255);
+}
+/* Slider Text Two */
+.News{
+  font-size: 45px;
+  font-family: 'Bungee Inline';
+  font-weight: bold;
+  color: #5D5F67; 
+  text-shadow: 2px 2px rgb(255, 255, 255); 
+}
+/* Slider Text Three */
+.News2{
+  font-size: 45px;
+  font-family: 'Bungee Inline';
+  font-weight: bold;
+  color: #004650; 
+  text-shadow: 2px 2px rgb(255, 255, 255);  
+}
+  /* Header Nav Two */
+header {
+  background:wheat;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.navbar {
+    float:center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 7px;
+    padding-top: 2px;
+  
+    position: relative;
+  }
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  nav a:hover {
+    color: black;
+  }
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+    width: 80%;
+  }
+ /* Botton Read more style  */
+.btn {
+    border-radius: 1px;
+    box-shadow: 0 0 0;
+    background-color: #EFD1A9;
+}
+   /* Paragraph style  */
+.text{
+    margin-top: 3em;
+}
+.Paragraph {
+  color: #011a3e;
+  text-align: justify;
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  margin-left: 64px;
+  margin-right: 10px;
+  max-width: 950px;
+}
+.Paragraph h6, h5, h4, h3{
+font-weight: bold;
+}
+/* comment style  */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px;
+  margin-bottom: 50px;
+  word-wrap: break-word;
+  background-color: rgb(228, 222, 199);
+  background-clip: border-box;
+  border-radius: 0;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+}
+
+.comment{
+  color: #8F673E ;
+}
+
+.comment-box {
+  padding: 5px
+}
+
+.comment-area textarea {
+  resize: none;
+  border: 1px solid #ad9f9f
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ffffff;
+  outline: 0;
+  box-shadow: 0 0 0 1px rgb(255, 0, 0) !important;
+}
+
+.send {
+  color: rgb(109, 75, 11);
+  background-color: rgb(247, 203, 10);
+  border-color: rgb(247, 203, 10);
+  
+
+}
+
+.send:hover {
+  color: rgb(126, 98, 45);
+  background-color: rgb(247, 233, 171);
+  border-color: rgb(247, 233, 171);
+}
+
+.Cancel {
+  color: rgb(109, 75, 11);
+  background-color: #CADAE7;
+  border-color: #CADAE7;
+
+}
+
+.Cancel:hover {
+  color: rgb(126, 98, 45);
+  background-color: #e5ecf1;
+  border-color: #e5ecf1;
+}
+
+.rating {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: row-reverse;
+  margin-left: -4px;
+  float: left
+}
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  width: 19px;
+  font-size: 25px;
+  color: #412e07;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
+/* UP Botton style  */
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -30px;
+  background-color: #8F673E;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: Arial, Tahoma;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.up.show {
+  right: 90px;
+  bottom: 95px;
+}
+   /* Footer style  */
+.copyright{
+  background: #edecf0;
+  padding: 30px 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: #011a3e;
+}
+
+
+
+
